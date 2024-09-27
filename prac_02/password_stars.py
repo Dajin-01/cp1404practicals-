@@ -1,4 +1,5 @@
 def get_password():
+    # get password from users
     password = input("Enter your password: ")
     while len(password) < 8:
         print("Password is too short, please enter at least 8 characters.")
@@ -7,6 +8,8 @@ def get_password():
 
 
 def print_asterisks(password):
+    # print asterisks
+
     print('*' * len(password))
 
 
