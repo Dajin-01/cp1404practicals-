@@ -1,16 +1,11 @@
 import random
 
 
-def determine_score_result(score):
-    # Function to determine the result based on the score
-    if score < 0 or score > 100:
-        return "Invalid score"
-    elif score >= 90:
-        return "Excellent"
-    elif score >= 50:
-        return "Passable"
-    else:
-        return "Bad"
+MINIMUM_SCORE = 0
+MAXIMUM_SCORE = 100
+EXCELLENT_SCORE = 90
+PASSABLE_SCORE = 50
+
 
 def main():
     # Get the score from the user
@@ -22,6 +17,21 @@ def main():
     random_score = random.randint(0, 100)
     random_result = determine_score_result(random_score)
     print(f"Random score: {random_score}, Result: {random_result}")
+
+
+
+def determine_score_result(score):
+    # Function to determine the result based on the score
+    if score < MINIMUM_SCORE or score > MAXIMUM_SCORE:
+        return "Invalid score"
+    elif score >= EXCELLENT_SCORE:
+        return "Excellent"
+    elif score >= PASSABLE_SCORE:
+        return "Passable"
+    else:
+        return "Bad"
+
+
 
 
 main()
