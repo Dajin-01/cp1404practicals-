@@ -12,7 +12,7 @@ file.close()
 
 print(f"Hi {name}!")
 
-"numbers.txt"
+"numbers.txt."
 
 with open("numbers.txt",'r') as file:
     number1 = int(file.readline().strip())
