@@ -1,6 +1,6 @@
 import random
 
-# Line 1:
+# Line 1
 
 # This function generates a random integer between 5 and 20 inclusive.
 # Example output: 15, 8, 20, etc.
