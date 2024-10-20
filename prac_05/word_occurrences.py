@@ -1,6 +1,6 @@
 def main():
     # sorts the words alphabetically, and prints each word with its count.
-    text = input("Text: ")
+    text = input("Text: ").lower()
 
     word_counts = {}
     words = text.split()
