@@ -23,7 +23,7 @@ def main():
 
 
 def extract_name(email):
-    "Extracts the name from the email address."
+    # Extracts the name from the email address."
     name_part = email.split("@")[0]
     name = name_part.replace(".", " ").title()
     return name
