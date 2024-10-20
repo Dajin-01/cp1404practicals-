@@ -19,7 +19,7 @@ HEX_COLOURS = {
 
 
 def main():
-    """Get color names until enter nothing."""
+    """Get color names from the user and display their hex codes."""
     colour_name = input("Enter colour name (blank to quit): ").lower()
 
     while colour_name != "":
